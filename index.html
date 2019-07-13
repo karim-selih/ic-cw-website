@@ -150,16 +150,14 @@
       <div class="row">
          <!-- Event cards -->
          <div class="col s12 l4">
-            <div class="card">
+            <div class="card" onclick="location.href='';" style="cursor:pointer;">
                <div class="card-image">
-                  <img src="img/collects.jpg" class="materialboxed" alt="">
+                  <img src="img/collects.jpg" alt="">
                </div>
                <div class="card-content">
-                  <a href="" class="black-text">
-                     <span class="card-title"><b>Volunteer's Meeting</b></span>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius
-                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                  </a>
+                  <span class="card-title"><b>Volunteer's Meeting</b></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci. Orci varius
+                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                </div>
             </div>
          </div>
@@ -390,6 +388,15 @@
    <script>
       document.addEventListener("DOMContentLoaded", function (e) {
          document.body.className = '';
+      });
+   </script>
+
+   <!-- Adds a shadow to the event card when the cursor hovers over one -->
+   <script>
+      $(".card").hover(function () {
+         $(this).addClass("z-depth-3");
+      }, function () {
+         $(this).removeClass("z-depth-3");
       });
    </script>
 
