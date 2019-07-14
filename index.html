@@ -306,6 +306,13 @@
       <h3 class="header center blue-text text-darken-1">Contact</h3>
    </section>
 
+   <!-- Scroll to top FAB -->
+   <div class="fixed-action-btn show-on-med-and-down hide-on-large-only scale-transition scale-out" id="scroll-to-top">
+      <a class="btn-floating btn orange darken-2 waves-effect waves-light">
+         <i class="material-icons">keyboard_arrow_up</i>
+      </a>
+   </div>
+
    <!-- Footer -->
    <footer class="page-footer grey darken-3">
       <div class="container">
@@ -322,13 +329,9 @@
          </div>
       </div>
       <div class="footer-copyright grey darken-4">
-         <div class="container center-align">&copy; Imperial College London Charity Week 2019</div>
+         <div class="container center-align">&copy; Imperial Charity Week 2019</div>
       </div>
    </footer>
-
-
-
-
 
    <!--  Scripts-->
 
@@ -397,6 +400,23 @@
          $(this).addClass("z-depth-3");
       }, function () {
          $(this).removeClass("z-depth-3");
+      });
+
+   </script>
+
+   <!-- Scrolls to top of page and hides/shows the FAB -->
+   <script>
+      $("#scroll-to-top").click(function () {
+         $("html, body").animate({ scrollTop: 0 }, "fast");
+         return false;
+      });
+
+      $(window).scroll(function () {
+         if ($(this).scrollTop() > 300) {
+            $("#scroll-to-top").removeClass("scale-out");
+         } else {
+            $("#scroll-to-top").addClass("scale-out");
+         }
       });
    </script>
 
