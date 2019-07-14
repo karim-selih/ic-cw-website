@@ -37,7 +37,7 @@
                   <i class="material-icons white-text">menu</i>
                </a>
                <ul class="right hide-on-med-and-down valign-wrapper">
-                  <li><a class="white-text" href="#index-banner">Home</a></li>
+                  <li><a class="white-text" href="#top">Home</a></li>
                   <li><a class="white-text" href="#about">About</a></li>
                   <li><a class="white-text" href="#events">Events</a></li>
                   <li><a class="white-text" href="#contact">Contact</a></li>
@@ -59,7 +59,7 @@
 
    <!-- First image -->
    <!-- For large screens -->
-   <div id="index-banner" class="parallax-container scrollSpy hide-on-med-and-down">
+   <div class="parallax-container hide-on-med-and-down">
       <div class="section no-pad-bot">
          <div class="container">
             <br><br>
@@ -308,7 +308,7 @@
 
    <!-- Scroll to top FAB -->
    <div class="fixed-action-btn show-on-med-and-down hide-on-large-only scale-transition scale-out" id="scroll-to-top">
-      <a class="btn-floating btn orange darken-2 waves-effect waves-light">
+      <a href="#top" class="btn-floating btn orange darken-2 waves-effect waves-light">
          <i class="material-icons">keyboard_arrow_up</i>
       </a>
    </div>
@@ -357,16 +357,14 @@
 
    <!-- Countdown timer -->
    <script>
-      // Set the date we're counting down to
+      // CW start date
       var countDownDate = new Date("Oct 15, 2019 00:00:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function () {
 
-         // Get today's date and time
          var now = new Date().getTime();
 
-         // Find the distance between now and the count down date
          var distance = countDownDate - now;
 
          // Time calculations for days, hours, minutes and seconds
@@ -375,11 +373,11 @@
          // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
          // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-         // Display the result in the element with id="demo"
+         // Display the result in the element with id="timer"
          document.getElementById("timer").innerHTML = "CW 2019 starts in " + days + "d " + hours + "h ";
          // + minutes + "m " + seconds + "s ";
 
-         // If the count down is finished, write some text 
+         // If the count down is finished
          if (distance < 0) {
             clearInterval(x);
             document.getElementById("timer").innerHTML = "CW is now!";
@@ -406,7 +404,7 @@
 
    <!-- Scrolls to top of page and hides/shows the FAB -->
    <script>
-      $("#scroll-to-top").click(function () {
+      $("a[href='#top']").click(function () {
          $("html, body").animate({ scrollTop: 0 }, "fast");
          return false;
       });
