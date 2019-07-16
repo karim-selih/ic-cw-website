@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Imperial College London Charity Week</title>
+
+   <!-- Font awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+   <!-- REPLACE FILE LINKS WITH CORRECT LOCATIONS -->
+   <!-- CSS  -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+   <link href="css/misc.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+   <!-- Icon -->
+   <link rel="shortcut icon" href="img/cw-logo-orange.ico" type="image/x-icon" />
+
+</head>
+
+<body class="out">
+
+   <!-- Navbar -->
+   <header>
+      <div class="navbar-fixed">
+         <nav class="nav-wrapper blue darken-1">
+            <div class="container">
+               <a class="brand-logo" href="">
+                  <img class="responsive-image" style="height: 50px; margin-top: 5px;" src="img/cw-logo.png" alt="Logo">
+               </a>
+
+               <a class="hide-on-med-and-down" style="padding-left: 70px;" id="timer">CW 2019 starts in 00d 00h</a>
+               <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons white-text">menu</i>
+               </a>
+               <ul class="right hide-on-med-and-down valign-wrapper">
+                  <li><a class="white-text" href="#top">Home</a></li>
+                  <li><a class="white-text" href="#about">About</a></li>
+                  <li><a class="white-text" href="#events">Events</a></li>
+                  <li><a class="white-text" href="#contact">Contact</a></li>
+                  <li><a class="white-text btn orange darken-2 waves-effect waves-light" href="#">Donate</a></li>
+               </ul>
+
+
+            </div>
+         </nav>
+      </div>
+      <ul class="sidenav grey lighten-2" id="mobile-menu">
+         <li><a class="sidenav-close" href="#mobile-home">Home</a></li>
+         <li><a class="sidenav-close" href="#about">About</a></li>
+         <li><a class="sidenav-close" href="#events">Events</a></li>
+         <li><a class="sidenav-close" href="#contact">Contact</a></li>
+         <li><a class="sidenav-close" href="#">Donate</a></li>
+      </ul>
+   </header>
+
+  
+
+
+
+   <!-- Scroll to top FAB -->
+   <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
+      <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
+         <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+   </div>
+
+   <!-- Footer -->
+   <footer class="page-footer grey darken-3">
+      <div class="container">
+         <div class="row">
+            <div class="col l4 offset-l2 s12">
+               <h5 class="white-text">Connect</h5>
+               <ul>
+                  <li><a class="grey-text text-lighten-3 social" href="https://www.facebook.com/ImperialCW/"> <i
+                           class="fab fa-facebook"></i> Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3 social" href="https://www.instagram.com/imperialcollegecw/"> <i
+                           class="fab fa-instagram"></i> Instagram</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+         <div class="container center-align">&copy; Imperial Charity Week 2019</div>
+      </div>
+   </footer>
+
+   <!--  Scripts-->
+
+   <!-- Hides the body -->
+   <script>
+      document.body.className = 'fade';
+   </script>
+
+
+   <!-- External scripts -->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="js/materialize.js"></script>
+   <script src="js/init.js"></script>
+
+   <!-- Materialized JQuery function calls -->
+   <script>
+      $(document).ready(function () {
+         $('.materialboxed').materialbox();
+         $('.scrollspy').scrollSpy();
+         $('.parallax').parallax();
+      });
+   </script>
+
+   <!-- Countdown timer -->
+   <script>
+      // CW start date
+      var countDownDate = new Date("Oct 15, 2019 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+         var now = new Date().getTime();
+
+         var distance = countDownDate - now;
+
+         // Time calculations for days, hours, minutes and seconds
+         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+         // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+         // Display the result in the element with id="timer"
+         document.getElementById("timer").innerHTML = "CW 2019 starts in " + days + "d " + hours + "h ";
+         // + minutes + "m " + seconds + "s ";
+
+         // If the count down is finished
+         if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "CW is now!";
+         }
+      }, 1000);
+   </script>
+
+   <!-- Fades the body in -->
+   <script>
+      document.addEventListener("DOMContentLoaded", function (e) {
+         document.body.className = '';
+      });
+   </script>
+
+   <!-- Adds a shadow to the event card when the cursor hovers over one -->
+   <script>
+      $(".card").hover(function () {
+         $(this).addClass("z-depth-3");
+      }, function () {
+         $(this).removeClass("z-depth-3");
+      });
+
+   </script>
+
+   <!-- Scrolls to top of page and hides/shows the FAB -->
+   <script>
+      $("a[href='#top']").click(function () {
+         $("html, body").animate({ scrollTop: 0 }, "fast");
+         return false;
+      });
+
+      $(window).scroll(function () {
+         if ($(this).scrollTop() > 300) {
+            $(".scroll-to-top").removeClass("scale-out");
+         } else {
+            $(".scroll-to-top").addClass("scale-out");
+         }
+      });
+   </script>
+
+</body>
+
+</html>
