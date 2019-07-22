@@ -6,9 +6,17 @@
 body {
    opacity: 1;
    transition: 1s opacity;
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
 }
 
 body.fade {
    opacity: 0;
    transition: none;
+}
+
+
+main {
+   flex: 1 0 auto;
 }
