@@ -22,10 +22,12 @@
    <style>
       .carousel-large {
          height: 450px;
+         max-height: 450px;
       }
 
       .carousel-small {
          height: 190px;
+         max-height: 190px;
       }
    </style>
 
@@ -76,7 +78,7 @@
          <h3 class="header center blue-text text-darken-1">Event Name</h3>
       </div>
 
-      <div class="carousel carousel-slider" id="pictures">
+      <div class="carousel carousel-slider carousel-small" id="pictures">
          <a class="carousel-item"><img src="https://lorempixel.com/800/400/food/1"></a>
          <a class="carousel-item"><img src="https://lorempixel.com/800/400/food/2"></a>
          <a class="carousel-item"><img src="https://lorempixel.com/800/400/food/3"></a>
@@ -155,6 +157,11 @@
    <!-- Materialized JQuery function calls -->
    <script>
       $(document).ready(function () {
+         if ($(window).height() > 600) {
+            $('#pictures').addClass('carousel-large');
+            $('#pictures').removeClass('carousel-small');
+         }
+         
          $('.carousel').carousel();
          $('.carousel.carousel-slider').carousel({
             fullWidth: true, indicators: true
