@@ -32,7 +32,7 @@
                   <img class="responsive-image" style="height: 50px; margin-top: 5px;" src="img/cw-logo.png" alt="Logo">
                </a>
 
-               <a class="hide-on-med-and-down" style="padding-left: 70px;" id="timer">CW 2019 starts in 00d 00h</a>
+               <a class="hide-on-med-and-down" style="padding-left: 70px;" id="timer"></a>
                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
                   <i class="material-icons white-text">menu</i>
                </a>
@@ -392,12 +392,14 @@
 
          // Time calculations for days, hours, minutes and seconds
          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+         localStorage.setItem("days", days.toString(10));
          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         localStorage.setItem("hours", hours.toString(10));
          // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
          // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
          // Display the result in the element with id="timer"
-         document.getElementById("timer").innerHTML = "CW 2019 starts in " + days + "d " + hours + "h ";
+         document.getElementById("timer").innerHTML = "CW 2019 starts in " + localStorage.getItem("days") + "d " + localStorage.getItem("hours") + "h ";
          // + minutes + "m " + seconds + "s ";
 
          // If the count down is finished
@@ -408,9 +410,14 @@
       }, 1000);
    </script>
 
-   <!-- Fades the body in -->
+   <!-- Fades the body in and sets the timer to the value stored in localStorage -->
    <script>
       document.addEventListener("DOMContentLoaded", function (e) {
+         if (localStorage.getItem("days") && localStorage.getItem("days")) {
+            document.getElementById("timer").innerHTML = "CW 2019 starts in " + localStorage.getItem("days") + "d " + localStorage.getItem("hours") + "h ";
+         } else {
+            document.getElementById("timer").innerHTML = "CW 2019 starts in 00d 00h ";
+         }
          document.body.className = '';
       });
    </script>
