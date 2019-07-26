@@ -116,14 +116,9 @@
 
    <!-- Countdown timer -->
    <script>
-      // CW start date
-      var countDownDate = new Date("Oct 21, 2019 00:00:00").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-
+      function getTime() {
+         var countDownDate = new Date("Oct 21, 2019 00:00:00").getTime();
          var now = new Date().getTime();
-
          var distance = countDownDate - now;
 
          // Time calculations for days, hours, minutes and seconds
@@ -131,19 +126,19 @@
          localStorage.setItem("days", days.toString(10));
          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
          localStorage.setItem("hours", hours.toString(10));
-         // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-         // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
          // Display the result in the element with id="timer"
          document.getElementById("timer").innerHTML = "CW 2019 starts in " + localStorage.getItem("days") + "d " + localStorage.getItem("hours") + "h ";
-         // + minutes + "m " + seconds + "s ";
 
          // If the count down is finished
          if (distance < 0) {
-            clearInterval(x);
+            if (localStorage.getItem("days") && localStorage.getItem("days")) {
+               localStorage.removeItem("days");
+               localStorage.removeItem("hours");
+            }
             document.getElementById("timer").innerHTML = "CW is now!";
          }
-      }, 1000);
+      }
    </script>
 
    <!-- Fades the body in and sets the timer to the value stored in localStorage -->
@@ -152,12 +147,11 @@
          if (localStorage.getItem("days") && localStorage.getItem("days")) {
             document.getElementById("timer").innerHTML = "CW 2019 starts in " + localStorage.getItem("days") + "d " + localStorage.getItem("hours") + "h ";
          } else {
-            document.getElementById("timer").innerHTML = "CW 2019 starts in 00d 00h ";
+            getTime();
          }
          document.body.className = '';
       });
    </script>
-
    <!-- Scrolls to top of page and hides/shows the FAB -->
    <script>
       $("a[href='#top']").click(function () {
