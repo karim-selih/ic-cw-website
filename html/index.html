@@ -65,7 +65,7 @@
             <div class="container">
                <br><br>
                <h1 class="header center white-text">Last year we raised</h1>
-               <h3 class="header center white-text col s12">£39,828.25</h3>
+               <h3 class="header center white-text col s12 money">£39,828.25</h3>
 
                <div class="row center" style="margin-top: 50px;">
                   <a href="#" id="donate-button" class="btn-large waves-effect waves-light orange darken-2">Donate</a>
@@ -82,7 +82,7 @@
          <div class="section no-pad-bot">
             <div class="container">
                <h1 class="header center blue-text text-darken-1">Last year we raised</h1>
-               <h3 class="header center black-text col s12">£39,828.25</h3>
+               <h3 class="header center black-text col s12 money">£39,828.25</h3>
                <div class="row center" style="margin-top: 40px;">
                   <a href="#" id="download-button" class="btn-large waves-effect waves-light orange darken-2">Donate</a>
                </div>
@@ -368,6 +368,7 @@
    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script src="js/materialize.js"></script>
    <script src="js/init.js"></script>
+   <script src="js/jquery.animateNumber.min.js"></script>
 
    <!-- Materialized JQuery function calls -->
    <script>
@@ -446,6 +447,32 @@
             $(".scroll-to-top").addClass("scale-out");
          }
       });
+   </script>
+
+   <script>
+      // how many decimal places allows
+      var decimal_places = 2;
+      var decimal_factor = decimal_places === 0 ? 1 : Math.pow(10, decimal_places);
+
+
+      $('.money')
+         .animateNumber(
+            {
+               number: 39828.25 * decimal_factor,
+
+               numberStep: function (now, tween) {
+                  var floored_number = Math.floor(now) / decimal_factor,
+                     target = $(tween.elem);
+
+                  if (decimal_places > 0) {
+                     // force decimal places even if they are 0
+                     floored_number = floored_number.toFixed(decimal_places);
+                  }
+                  target.text('£' + floored_number);
+               }
+            },
+            1500
+         );
    </script>
 
 </body>
