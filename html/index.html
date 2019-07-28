@@ -363,56 +363,21 @@
       document.body.className = 'fade';
    </script>
 
-
    <!-- External scripts -->
    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script src="js/materialize.js"></script>
+
+   <!-- Common scripts used for websites functionality -->
    <script src="js/init.js"></script>
+   <script src='js/fab.js'></script>
+   <script src='js/timer.js'></script>
+   <script src='js/fade.js'></script>
 
    <!-- Materialized JQuery function calls -->
    <script>
       $(document).ready(function () {
          $('.scrollspy').scrollSpy();
          $('.parallax').parallax();
-      });
-   </script>
-
-   <!-- Countdown timer -->
-   <script>
-      function getTime() {
-         var countDownDate = new Date("Oct 21, 2019 00:00:00").getTime();
-         var now = new Date().getTime();
-         var distance = countDownDate - now;
-
-         // Time calculations for days, hours, minutes and seconds
-         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-         localStorage.setItem("days", days.toString(10));
-         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-         localStorage.setItem("hours", hours.toString(10));
-
-         // Display the result in the element with id="timer"
-         document.getElementById("timer").innerHTML = "CW 2019 starts in " + localStorage.getItem("days") + "d " + localStorage.getItem("hours") + "h ";
-
-         // If the count down is finished
-         if (distance < 0) {
-            if (localStorage.getItem("days") && localStorage.getItem("days")) {
-               localStorage.removeItem("days");
-               localStorage.removeItem("hours");
-            }
-            document.getElementById("timer").innerHTML = "CW is now!";
-         }
-      }
-   </script>
-
-   <!-- Fades the body in and sets the timer to the value stored in localStorage -->
-   <script>
-      document.addEventListener("DOMContentLoaded", function (e) {
-         if (localStorage.getItem("days") && localStorage.getItem("days")) {
-            document.getElementById("timer").innerHTML = "CW 2019 starts in " + localStorage.getItem("days") + "d " + localStorage.getItem("hours") + "h ";
-         } else {
-            getTime();
-         }
-         document.body.className = '';
       });
    </script>
 
@@ -423,25 +388,7 @@
       }, function () {
          $(this).removeClass("z-depth-3");
       });
-
    </script>
-
-   <!-- Scrolls to top of page and hides/shows the FAB -->
-   <script>
-      $("a[href='#top']").click(function () {
-         $("html, body").animate({ scrollTop: 0 }, "fast");
-         return false;
-      });
-
-      $(window).scroll(function () {
-         if ($(this).scrollTop() > 300) {
-            $(".scroll-to-top").removeClass("scale-out");
-         } else {
-            $(".scroll-to-top").addClass("scale-out");
-         }
-      });
-   </script>
-
 
 </body>
 
