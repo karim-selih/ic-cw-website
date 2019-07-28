@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body class="fade">
 
    <!-- Navbar -->
    <header>
@@ -110,37 +110,9 @@
    </main>
 
    <!-- Footer -->
-   <footer class="page-footer grey darken-3">
-      <div class="container">
-         <div class="row">
-            <div class="col l4 offset-l2 s12">
-               <h5 class="white-text">Connect</h5>
-               <ul>
-                  <li><a class="grey-text text-lighten-3 social" href="https://www.facebook.com/ImperialCW/"> <i
-                           class="fab fa-facebook"></i> Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3 social" href="https://www.instagram.com/imperialcollegecw/"> <i
-                           class="fab fa-instagram"></i> Instagram</a></li>
-               </ul>
-            </div>
-            <div class="col l4 offset-l10 offset-s4 s6">
-               <a class="grey-text text-lighten-3 social valign-wrapper" href="https://www.theisoc.com">ISOC <br><img
-                     class="responsive-image" src="../img/isoc-logo.png" style="height: 40px;"></a>
-            </div>
+   <footer class="page-footer grey darken-3"></footer>
 
-         </div>
-      </div>
-      <div class="footer-copyright grey darken-4">
-         <div class="container center-align">&copy; Imperial Charity Week 2019</div>
-      </div>
-   </footer>
-
-   <!--  Scripts-->
-
-   <!-- Hides the body -->
-   <script>
-      document.body.className = 'fade';
-   </script>
-
+   <!--  Scripts -->
 
    <!-- External scripts -->
    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -151,6 +123,13 @@
    <script src='../js/fab.js'></script>
    <script src='../js/timer.js'></script>
    <script src='../js/fade.js'></script>
+
+   <!-- Loads footer -->
+   <script>
+      $(document).ready(function () {
+         $(".page-footer").load("../html-sections/footer.html");
+      });
+   </script>
 
 
 </body>
