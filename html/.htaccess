@@ -1,0 +1,9 @@
+ErrorDocument 400 http://imperialcharityweek.co.uk/error/
+ErrorDocument 403 http://imperialcharityweek.co.uk/error/
+ErrorDocument 404 http://imperialcharityweek.co.uk/error/
+ErrorDocument 500 http://imperialcharityweek.co.uk/error/
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
+Options All -Indexes
