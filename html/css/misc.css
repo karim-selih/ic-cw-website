@@ -20,3 +20,7 @@ body.fade {
 main {
    flex: 1 0 auto;
 }
+
+.parallax-container {
+   height: 550px;
+}

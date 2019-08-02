@@ -19,12 +19,6 @@
    <!-- Icon -->
    <link rel="shortcut icon" href="img/cw-logo-orange.ico" type="image/x-icon" />
 
-   <style>
-      .parallax-container {
-         height: 550px;
-      }
-   </style>
-
 </head>
 
 <body class="fade">
@@ -376,6 +370,7 @@
    <script src='js/fab.js'></script>
    <script src='js/timer.js'></script>
    <script src='js/fade.js'></script>
+   <script src='js/card-hover.js'></script>
 
    <!-- Loads footer and materialized functions -->
    <script>
@@ -385,16 +380,7 @@
          $('.parallax').parallax();
       });
    </script>
-
-   <!-- Adds a shadow to the event card when the cursor hovers over one -->
-   <script>
-      $(".card").hover(function () {
-         $(this).addClass("z-depth-3");
-      }, function () {
-         $(this).removeClass("z-depth-3");
-      });
-   </script>
-
+   
 </body>
 
 </html>
