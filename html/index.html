@@ -371,40 +371,15 @@
    <script src='js/timer.js'></script>
    <script src='js/fade.js'></script>
    <script src='js/card-hover.js'></script>
+   <script src="js/tablet-nav.js"></script>
+   <script src="js/main-page-tablet-optimisations.js"></script>
 
    <!-- Loads footer and materialized functions -->
    <script>
       $(document).ready(function () {
-         if ($(window).width() < 1250) {
-            $("#timer").addClass("hide");
-            $(".event").addClass("l6")
-            $(".about").addClass("l6");
-            $("#third-about").addClass("push-l3");
-         }
-         else {
-            $(".about").addClass("l4");
-         }
          $(".page-footer").load("./html-sections/footer.html");
          $('.scrollspy').scrollSpy();
          $('.parallax').parallax();
-      });
-   </script>
-
-   <script>
-      $(window).resize(function () {
-         if ($(window).width() < 1250) {
-            $("#timer").addClass("hide");
-            $(".event").addClass("l6");
-            $(".about").addClass("l6");
-            $("#third-about").addClass("push-l3");
-         }
-         else {
-            $("#timer").removeClass("hide");
-            $(".event").removeClass("l6");
-            $(".about").removeClass("l6");
-            $("#third-about").removeClass("push-l3");
-            $(".about").addClass("l4");
-         }
       });
    </script>
 
