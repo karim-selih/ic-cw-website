@@ -1,7 +1,16 @@
-(function($){
-  $(function(){
+$(document).ready(function () {
+  $('.sidenav').sidenav();
 
-    $('.sidenav').sidenav();
+  if ($(window).width() < 1100) {
+    $("#timer").addClass("hide");
+  }
+});
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+$(window).resize(function () {
+  if ($(window).width() < 1100) {
+    $("#timer").addClass("hide");
+  }
+  else {
+    $("#timer").removeClass("hide");
+  }
+});
