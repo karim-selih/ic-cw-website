@@ -113,7 +113,7 @@
       <!-- About -->
       <div class="container scrollSpy" id="about" style="margin-top: 80px; margin-bottom: 100px;">
          <div class="row">
-            <div class="col s12 m4">
+            <div class="col s12 m4 about">
                <div class="icon-block">
                   <h2 class="center blue-text text-darken-1"><i class="material-icons">supervisor_account</i></h2>
                   <h5 class="center">Who we are</h5>
@@ -124,7 +124,7 @@
                </div>
             </div>
 
-            <div class="col s12 m4">
+            <div class="col s12 m4 about">
                <div class="icon-block">
                   <h2 class="center blue-text text-darken-1"><i class="material-icons">search</i></h2>
                   <h5 class="center">Our aim</h5>
@@ -138,7 +138,7 @@
                </div>
             </div>
 
-            <div class="col s12 m4">
+            <div class="col s12 m4 about" id="third-about">
                <div class="icon-block">
                   <h2 class="center blue-text text-darken-1"><i class="material-icons">accessibility_new</i></h2>
                   <h5 class="center">How you can help</h5>
@@ -169,7 +169,7 @@
       <div class="container scrollSpy" id="events" style="margin-bottom: 80px;">
          <div class="row">
             <!-- Event cards -->
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -182,7 +182,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -196,7 +196,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -209,7 +209,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -222,7 +222,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -235,7 +235,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -248,7 +248,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -261,7 +261,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -274,7 +274,7 @@
                </div>
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/template/';" style="cursor:pointer;">
                   <div class="card-image">
                      <img src="img/collects.jpg" alt="">
@@ -375,12 +375,42 @@
    <!-- Loads footer and materialized functions -->
    <script>
       $(document).ready(function () {
+         if ($(window).width() < 1250) {
+            $("#timer").addClass("hide");
+            $(".event").addClass("l6")
+            $(".about").addClass("l6");
+            $("#third-about").addClass("push-l3");
+         }
+         else {
+            $("#timer").removeClass("hide");
+            $(".event").removeClass("l6")
+            $(".about").removeClass("l6");
+            $("#third-about").removeClass("push-l3");
+         }
          $(".page-footer").load("./html-sections/footer.html");
          $('.scrollspy').scrollSpy();
          $('.parallax').parallax();
       });
    </script>
-   
+
+   <script>
+      $(window).resize(function () {
+         if ($(window).width() < 1250) {
+            $("#timer").addClass("hide");
+            $(".event").addClass("l6");
+            $(".about").addClass("l6");
+            $("#third-about").addClass("push-l3");
+         }
+         else {
+            $("#timer").removeClass("hide");
+            $(".event").removeClass("l6");
+            $(".about").removeClass("l6");
+            $(".about").removeClass("l6");
+            $("#third-about").removeClass("push-l3");
+         }
+      });
+   </script>
+
 </body>
 
 </html>
