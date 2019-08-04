@@ -19,6 +19,12 @@
    <!-- Icon -->
    <link rel="shortcut icon" href="img/cw-logo-orange.ico" type="image/x-icon" />
 
+   <style>
+      .caption {
+         margin-top: 150px;
+      }
+   </style>
+
 </head>
 
 <body class="fade">
@@ -156,11 +162,22 @@
          <div class="section no-pad-bot">
             <div class="container">
                <div class="row center">
-                  <h5 class="header col s12 light">We conquered mountains</h5>
+                  <h3 class="header col s12 light">We conquered mountains</h3>
                </div>
             </div>
          </div>
          <div class="parallax"><img src="img/second-image.jpg" alt="description"></div>
+      </div>
+      <div class="slider">
+         <ul class="slides">
+            <li>
+               <img src="img/second-image.jpg">
+               <div class="caption center-align">
+                  <h3>We conquered mountains</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+               </div>
+            </li>
+         </ul>
       </div>
 
       <!-- Events -->
@@ -295,12 +312,24 @@
          <div class="section no-pad-bot">
             <div class="container">
                <div class="row center">
-                  <h5 class="header col s12 light">some sentence</h5>
+                  <h3 class="header col s12 light">some sentence</h3>
                </div>
             </div>
          </div>
          <div class="parallax"><img src="img/third-image.jpg" alt="description"></div>
       </div>
+      <div class="slider">
+         <ul class="slides">
+            <li>
+               <img src="img/third-image.jpg">
+               <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+               </div>
+            </li>
+         </ul>
+      </div>
+
 
       <!-- Contact -->
       <div class="container scrollspy" id="contact">
@@ -347,7 +376,6 @@
          </div>
       </div>
 
-
       <!-- Scroll to top FAB -->
       <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
          <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
@@ -379,6 +407,7 @@
          $(".page-footer").load("./html-sections/footer.html");
          $('.scrollspy').scrollSpy();
          $('.parallax').parallax();
+         $('.slider').slider({ indicators: false, height: 550 });
       });
    </script>
 
