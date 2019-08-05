@@ -92,7 +92,8 @@
    <main>
 
       <div class="container">
-         <h2 class="header left blue-text text-darken-1" style="margin-top: 50px; margin-bottom: 50px;">Speaker Event</h2>
+         <h2 class="header left blue-text text-darken-1" style="margin-top: 50px; margin-bottom: 50px;">Speaker Event
+         </h2>
 
 
          <div class="carousel carousel-slider carousel-large" style="object-fit: cover;" id="pictures">
@@ -114,14 +115,17 @@
                   more to come.</p>
             </div>
             <br>
-            <div class="col s12 l3 offset-l1">
+            <div class="col s12 l4">
                <div class="card">
                   <div class="card-content">
                      <span class="card-title">Get in touch</span>
-                     <h6>Person 1</h6>
-                     <a href="#">email adress</a>
-                     <h6>Person 2</h6>
-                     <a href="#">email adress</a>
+                     <h6>Charity Week Head</h6>
+                     <a id="head-email"
+                        href="mailto:dinner@imperialcharityweek.co.uk?subject=Dinner">head@imperialcharityweek.co.uk</a>
+                     <h6>Azmat Habibullah</h6>
+                     <a href="mailto:ah5117@imperial.ac.uk?subject=CW Speaker Event">ah5117@imperial.ac.uk</a>
+                     <h6>Ambreen Muhammed</h6>
+                     <a href="mailto:kom17@imperial.ac.uk?subject=CW Speaker Event">kom17@imperial.ac.uk</a>
                   </div>
                </div>
             </div>
@@ -163,6 +167,9 @@
          $('.carousel.carousel-slider').carousel({
             fullWidth: true, indicators: true
          });
+         if ($(window).width() < 1150) {
+            $('#head-email').addClass('truncate');
+         }
          // Makes the carousel change to the next image every 3 seconds
          setInterval(function () {
             $('.carousel').carousel('next');
@@ -176,6 +183,11 @@
 
    <script>
       $(window).on('resize', function () {
+         if ($(window).width() < 1150) {
+            $('#head-email').addClass('truncate');
+         } else {
+            $('#head-email').removeClass('truncate');
+         }
          // if ($(window).height() > 600) {
          //    $('#pictures').addClass('carousel-large');
          //    $('#pictures').removeClass('carousel-small');
