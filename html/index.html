@@ -25,8 +25,15 @@
       }
 
       .event {
-         /* height: 480px; */
          margin-bottom: 20px;
+         display: flex;
+      }
+
+      .event-container {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         align-items: stretch
       }
    </style>
 
@@ -186,7 +193,7 @@
 
       <h3 class="header center blue-text text-darken-1" style="margin-top: 80px; margin-bottom: 60px;">Events</h3>
       <div class="container scrollSpy" id="events" style="margin-bottom: 80px;">
-         <div class="row">
+         <div class="row event-container">
             <!-- Event cards -->
             <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/dinner/';" style="cursor:pointer;">
@@ -228,7 +235,6 @@
                   </div>
                </div>
             </div>
-
             <div class="col s12 l4 event">
                <div class="card" onclick="location.href='./events/stalls/';" style="cursor:pointer;">
                   <div class="card-image">
