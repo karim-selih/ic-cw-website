@@ -31,14 +31,9 @@
 
 
    <style>
-      .carousel-large {
+      .carousel {
          height: 450px;
          max-height: 450px;
-      }
-
-      carousel-small {
-         height: 190px;
-         max-height: 190px;
       }
    </style>
 
@@ -106,7 +101,7 @@
          <h2 class="header left blue-text text-darken-1" style="margin-top: 50px; margin-bottom: 50px;">Big Brunch</h2>
 
 
-         <div class="carousel carousel-slider carousel-large" style="object-fit: cover;" id="pictures">
+         <div class="carousel carousel-slider" style="object-fit: cover;" id="pictures">
             <a class="carousel-item"><img src="../../img/brunch-1.jpg" alt="Brunch"></a>
             <a class="carousel-item"><img src="../../img/brunch-2.jpg" alt="Brunch"></a>
             <a class="carousel-item"><img src="../../img/brunch-3.jpg" alt="Brunch"></a>
@@ -181,24 +176,6 @@
       });
    </script>
 
-
-
-
-
-   <script>
-      $(window).on('resize', function () {
-         // if ($(window).height() > 600) {
-         //    $('#pictures').addClass('carousel-large');
-         //    $('#pictures').removeClass('carousel-small');
-         // } else {
-         //    $('#pictures').addClass('carousel-small');
-         //    $('#pictures').removeClass('carousel-large');
-         // }
-         // $(".carousel").height(20);
-      })
-   </script>
-
-   </script>
 </body>
 
 </html>
