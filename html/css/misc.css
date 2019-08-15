@@ -1,6 +1,21 @@
 .social:hover {
-   text-decoration: underline;
-   text-decoration-color: darkorange;
+   /* font-size: 105%; */
+   margin-left: 8px;
+   transition: 0.2s;
+   color: white !important;
+}
+
+.social {
+   transition: 0.25s;
+}
+
+.copyright-link:hover {
+   font-size: 105%;
+   transition: 0.2s;
+}
+
+.copyright-link {
+   transition: 0.3s;
 }
 
 body {
