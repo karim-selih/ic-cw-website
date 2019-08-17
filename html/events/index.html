@@ -97,6 +97,62 @@
             </div>
          </div>
       </div>
+
+      <div class="container">
+         <div class="row" id="event-cards">
+
+            <div class="col s12 l4 event">
+               <div class="card" onclick="location.href='./events/volunteers-meeting/';">
+                  <div class="card-image">
+                     <img class="lazyload" data-src="../img/test.jpg" alt="Volunteers meeting">
+                  </div>
+                  <div class="card-content">
+                     <span class="card-title"><b>Volunteer's Meeting</b></span>
+                     <p>Whether you’re a Fresher or a Charity Week Veteran, Volunteer’s Meeting is your first stop to
+                        find out everything about the campaign and how you can get involved!</p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <script>
+         var requestURL = './events.json';
+         var request = new XMLHttpRequest();
+         request.open('GET', requestURL);
+         request.responseType = 'json';
+         request.send();
+
+         request.onload = function () {
+            var response = request.response['events'];
+            for (var i = 0; i < response.length; i++) {
+               var event = response[i];
+               var line = `<div class="col s12 l4 event">
+                              <div class="card" onclick="location.href='` + event["location"] + `';">
+                                 <div class="card-image">
+                                    <img class="lazyload" data-src="` + event["image"] + `" alt="` + event["name"] + `">
+                                 </div>
+                                 <div class="card-content">
+                                    <span class="card-title"><b>` + event["name"] + `</b></span>
+                                    <p>` + event["short"] + `</p>
+                                 </div>
+                              </div>
+                           </div>`;
+
+               // var p1 = document.createElement('p');
+               // p1.textContent = "Name: " + entry['Name'];
+
+               // var p2 = document.createElement('p');
+               // p2.textContent = "Major: " + entry['Major'];
+
+               $("#event-cards").append(line);
+            }
+         }
+
+
+      </script>
+
+
    </main>
 
 
@@ -121,6 +177,7 @@
    <script src='../js/fab.js'></script>
    <script src='../js/timer.js'></script>
    <script src='../js/fade.js'></script>
+   <script src='../js/lazysizes.min.js'></script>
 
    <!-- Loads footer -->
    <script>
