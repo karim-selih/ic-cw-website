@@ -134,6 +134,7 @@
    <script>
       $(document).ready(function () {
          $(".page-footer").load("../html-sections/footer.html");
+         
          var requestURL = './events.json';
          var request = new XMLHttpRequest();
          request.open('GET', requestURL);
@@ -167,7 +168,7 @@
                $("#event-cards").append(line);
             }
          }
-         setTimeout(function(){ document.body.className = '';; }, 300);
+         setTimeout(function(){ document.body.className = ''; }, 300);
          
 
       });
