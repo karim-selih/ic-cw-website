@@ -142,10 +142,17 @@
 
          request.onload = function () {
             var response = request.response['events'];
-            for (var i = 0; i < response.length; i++) {
+            var numEvents = response.length;
+            // penultimate-event last-event
+            for (var i = 0; i < numEvents; i++) {
                var event = response[i];
-               console.log(event);
-               var line = `<div class="col s12 l4 event">
+               var additionalClasses = "";
+               if ( i == numEvents - 1) {
+                  additionalClasses = "last-event pull-l2"
+               } else if (i == numEvents - 2) {
+                  additionalClasses = "penultimate-event offset-l2"
+               }
+               var line = `<div class="col s12 l4 event ` + additionalClasses + `">
                               <div class="card" onclick="location.href='` + event["location"] + `';">
                                  <div class="card-image">
                                     <img src=".` + event["image"] + `" alt="` + event["name"] + `">
