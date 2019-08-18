@@ -180,114 +180,8 @@
 
       <h3 class="header center blue-text text-darken-1" style="margin-top: 80px; margin-bottom: 60px;">Events</h3>
       <div class="container scrollSpy" id="events" style="margin-bottom: 80px;">
-         <div class="row event-container">
-            <!-- Event cards -->
-            <div class="col s12 l4 event">
-               <div class="card" onclick="location.href='./events/volunteers-meeting/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/test.jpg" alt="Volunteers meeting">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Volunteer's Meeting</b></span>
-                     <p>Whether you’re a Fresher or a Charity Week Veteran, Volunteer’s Meeting is your first stop to
-                        find out everything about the campaign and how you can get involved!</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col s12 l4 event">
-               <div class="card" onclick="location.href='./events/dinner/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/dinner-3.JPG" alt="Annual Dinner">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Annual Dinner</b></span>
-                     <p>Imperial College Charity Week invites you to our renowned flagship event - the Annual Charity
-                        Week Dinner! This is a must attend event for everyone!</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col s12 l4 event">
-               <div class="card" onclick="location.href='./events/food-festival/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/food-fest-1.jpg" alt="Food Festival">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Food Festival</b></span>
-                     <p>Food Festival is where you can find a range of mouth-watering cuisines, fun activities and
-                        buzzing vibes, all located in the heart of London! </p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col s12 l4 event">
-               <div class="card" onclick="location.href='./events/collects/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/collects.jpg" alt="Collects">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Collects</b></span>
-                     <p>Collects is the heart of Charity Week! Put on your CW t-shirt, grab a bucket and
-                        raise as much money as possible at street collects, tube collects and brand new this year:
-                        mosque collects! </p>
-                  </div>
-               </div>
-            </div>
-            
-            <div class="col s12 l4 event">
-               <div class="card" onclick="location.href='./events/challenges/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/second-image.jpg" alt="Challenges">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Challenges</b></span>
-                     <p>More details coming soon</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col s12 l4 event">
-               <div class="card" onclick="location.href='./events/stalls/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/stalls-1.jpg" alt="Stalls">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Stalls</b></span>
-                     <p>From chicken wings to cakes to smoothies - all available in one place, CW Stalls! Come along,
-                        experience this wonderful mix of food and have a chat and learn what CW is all about!</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col s12 l4 offset-l2 event penultimate-event">
-               <div class="card" onclick="location.href='./events/brunch/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/brunch-1.jpg" alt="Big Brunch">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Big Brunch</b></span>
-                     <p>An afternoon of food and fun as we aim to spread the message of Charity Week through
-                        mouth-watering cuisine whilst we delve into the meaning of charity with our guest
-                        performances.</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col s12 l4 pull-l2 event last-event">
-               <div class="card" onclick="location.href='./events/speaker-event/';">
-                  <div class="card-image">
-                     <img class="lazyload" data-src="img/brunch-1.jpg" alt="Speaker Event">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title"><b>Speaker Event</b></span>
-                     <p>An evening full of eye-opening talks detailing some of the many disasters scattered across our
-                        world and what we can do to help. You do not want to miss this!</p>
-                  </div>
-               </div>
-            </div>
-
-         </div>
+         <!-- Event cards -->
+         <div class="row event-container" id="event-cards"></div>
 
          <div class="row">
             <div class="col s12 l4 push-l4">
@@ -383,7 +277,7 @@
    <script src="js/init.js"></script>
    <script src='js/fab.js'></script>
    <script src='js/timer.js'></script>
-   <script src='js/fade.js'></script>
+   <!-- <script src='js/fade.js'></script> -->
    <script src='js/card-hover.js'></script>
    <script src="js/main-page-tablet-optimisations.js"></script>
 
@@ -394,6 +288,41 @@
          $('.scrollspy').scrollSpy();
          $('.parallax').parallax();
          $('.slider').slider({ indicators: false, height: 550 });
+
+         var requestURL = './events/events.json';
+         var request = new XMLHttpRequest();
+         request.open('GET', requestURL);
+         request.responseType = 'json';
+         request.send();
+
+         request.onload = function () {
+            var response = request.response['events'];
+            var numEvents = response.length;
+            // penultimate-event last-event
+            for (var i = 0; i < numEvents; i++) {
+               var event = response[i];
+               var additionalClasses = "";
+               if (i == numEvents - 1) {
+                  additionalClasses = "last-event pull-l2"
+               } else if (i == numEvents - 2) {
+                  additionalClasses = "penultimate-event offset-l2"
+               }
+               var line = `<div class="col s12 l4 event ` + additionalClasses + `">
+                              <div class="card" onclick="location.href='./events/` + event["location"] + `';">
+                                 <div class="card-image">
+                                    <img src="` + event["image"] + `" alt="` + event["name"] + `">
+                                 </div>
+                                 <div class="card-content">
+                                    <span class="card-title"><b>` + event["name"] + `</b></span>
+                                    <p>` + event["short"] + `</p>
+                                 </div>
+                              </div>
+                           </div>`;
+
+               $("#event-cards").append(line);
+            }
+         }
+         setTimeout(function(){ document.body.className = ''; }, 300);
       });
    </script>
 
