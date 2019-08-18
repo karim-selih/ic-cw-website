@@ -1,7 +1,7 @@
-ErrorDocument 400 http://imperialcharityweek.co.uk/error/
-ErrorDocument 403 http://imperialcharityweek.co.uk/error/
-ErrorDocument 404 http://imperialcharityweek.co.uk/error/
-ErrorDocument 500 http://imperialcharityweek.co.uk/error/
+ErrorDocument 400 https://imperialcharityweek.co.uk/error/
+ErrorDocument 403 https://imperialcharityweek.co.uk/error/
+ErrorDocument 404 https://imperialcharityweek.co.uk/error/
+ErrorDocument 500 https://imperialcharityweek.co.uk/error/
 <Files .htaccess>
   order allow,deny
   deny from all
