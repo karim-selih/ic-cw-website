@@ -102,7 +102,38 @@
             </div>
          </div>
       </div>
-      <script>
+
+   </main>
+
+
+   <!-- Scroll to top FAB -->
+   <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
+      <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
+         <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+   </div>
+
+   <!-- Footer -->
+   <footer class="page-footer grey darken-3"></footer>
+
+   <!--  Scripts -->
+
+   <!-- External scripts -->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="../js/materialize.js"></script>
+
+   <!-- Common scripts used for websites functionality -->
+   <script src="../js/init.js"></script>
+   <script src='../js/fab.js'></script>
+   <script src='../js/timer.js'></script>
+   <script src='../js/card-hover.js'></script>
+   <!-- hoverable class produces a large shadow -->
+   <script src='../js/main-page-tablet-optimisations.js'></script>
+
+   <!-- Loads footer -->
+   <script>
+      $(document).ready(function () {
+         $(".page-footer").load("../html-sections/footer.html");
          var requestURL = './events.json';
          var request = new XMLHttpRequest();
          request.open('GET', requestURL);
@@ -129,43 +160,9 @@
                $("#event-cards").append(line);
             }
          }
+         setTimeout(function(){ document.body.className = '';; }, 300);
+         
 
-
-      </script>
-
-
-   </main>
-
-
-   <!-- Scroll to top FAB -->
-   <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
-      <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
-         <i class="large material-icons">keyboard_arrow_up</i>
-      </a>
-   </div>
-
-   <!-- Footer -->
-   <footer class="page-footer grey darken-3"></footer>
-
-   <!--  Scripts -->
-
-   <!-- External scripts -->
-   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   <script src="../js/materialize.js"></script>
-
-   <!-- Common scripts used for websites functionality -->
-   <script src="../js/init.js"></script>
-   <script src='../js/fab.js'></script>
-   <script src='../js/timer.js'></script>
-   <script src='../js/fade.js'></script>
-   <script src='../js/card-hover.js'></script>
-   <!-- hoverable class produces a large shadow -->
-   <script src='../js/main-page-tablet-optimisations.js'></script>
-
-   <!-- Loads footer -->
-   <script>
-      $(document).ready(function () {
-         $(".page-footer").load("../html-sections/footer.html");
       });
    </script>
 
