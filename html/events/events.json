@@ -9,43 +9,43 @@
       {
          "name": "Annual Dinner",
          "location": "./dinner/",
-         "image": "./img/dinner-3.JPG",
+         "image": "./img/dinner-3-low.jpeg",
          "short": "Imperial College Charity Week invites you to our renowned flagship event - the Annual Charity Week Dinner! This is a must attend event for everyone!"
       },
       {
          "name": "Food Festival",
          "location": "./food-festival/",
-         "image": "./img/food-fest-1.jpg",
+         "image": "./img/food-fest-1-low.jpeg",
          "short": "Food Festival is where you can find a range of mouth-watering cuisines, fun activities and buzzing vibes, all located in the heart of London!"
       },
       {
          "name": "Collects",
-         "location": "./collects/",
+         "location": "./collects-low.jpeg/",
          "image": "./img/collects.jpg",
          "short": "Collects is the heart of Charity Week! Put on your CW t-shirt, grab a bucket and raise as much money as possible at street collects, tube collects and brand new this year: mosque collects!"
       },
       {
          "name": "Challenges",
          "location": "./challenges/",
-         "image": "./img/second-image.jpg",
+         "image": "./img/challenges-1-low.jpeg",
          "short": "Challenges is about pushing yourself out of your comfort zone to not only raise money but develop yourself as an individual and unite as a community"
       },
       {
          "name": "Stalls",
          "location": "./stalls/",
-         "image": "./img/stalls-1.jpg",
+         "image": "./img/stalls-1-low.jpeg",
          "short": "From chicken wings to cakes to smoothies - all available in one place, CW Stalls! Come along, experience this wonderful mix of food and have a chat and learn what CW is all about!"
       },
       {
          "name": "Big Brunch",
          "location": "./brunch/",
-         "image": "./img/brunch-1.jpg",
+         "image": "./img/brunch-1-low.jpg",
          "short": "An afternoon of food and fun as we aim to spread the message of Charity Week through mouth-watering cuisine whilst we delve into the meaning of charity with our guest performances."
       },
       {
          "name": "Speaker Event",
          "location": "./speaker-event/",
-         "image": "./img/stalls-1.jpg",
+         "image": "./img/stalls-1-low.jpg",
          "short": "An evening full of eye-opening talks detailing some of the many disasters scattered across our world and what we can do to help. You do not want to miss this!"
       }
    ]
