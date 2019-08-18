@@ -2,16 +2,44 @@
    "events": [
       {
          "name": "Volunteer's meeting",
-         "location": "./events/volunteers-meeting/",
-         "image": "../img/test.jpg",
+         "location": "./volunteers-meeting/",
+         "image": "./img/test.jpg",
          "short": "Whether you’re a Fresher or a Charity Week Veteran, Volunteer’s Meeting is your first stop to find out everything about the campaign and how you can get involved!",
          "long": "Physics"
       },
       {
          "name": "Annual Dinner",
-         "location": "./events/dinner/'",
-         "image": "../img/dinner-3.JPG",
+         "location": "./dinner/",
+         "image": "./img/dinner-3.JPG",
          "short": "Imperial College Charity Week invites you to our renowned flagship event - the Annual Charity Week Dinner! This is a must attend event for everyone!",
+         "long": "Physics"
+      },
+      {
+         "name": "Food Festival",
+         "location": "./food-festival/",
+         "image": "./img/food-fest-1.jpg",
+         "short": "Food Festival is where you can find a range of mouth-watering cuisines, fun activities and buzzing vibes, all located in the heart of London!",
+         "long": "Physics"
+      },
+      {
+         "name": "Collects",
+         "location": "./collects/",
+         "image": "./img/collects.jpg",
+         "short": "Collects is the heart of Charity Week! Put on your CW t-shirt, grab a bucket and raise as much money as possible at street collects, tube collects and brand new this year: mosque collects!",
+         "long": "Physics"
+      },
+      {
+         "name": "Challenges",
+         "location": "./challenges/",
+         "image": "./img/second-image.jpg",
+         "short": "More details coming soon",
+         "long": "Physics"
+      },
+      {
+         "name": "Stalls",
+         "location": "./stalls/",
+         "image": "./img/stalls-1.jpg",
+         "short": "From chicken wings to cakes to smoothies - all available in one place, CW Stalls! Come along, experience this wonderful mix of food and have a chat and learn what CW is all about!",
          "long": "Physics"
       }
    ]
