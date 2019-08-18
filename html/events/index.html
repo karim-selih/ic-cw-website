@@ -134,7 +134,7 @@
    <script>
       $(document).ready(function () {
          $(".page-footer").load("../html-sections/footer.html");
-         
+
          var requestURL = './events.json';
          var request = new XMLHttpRequest();
          request.open('GET', requestURL);
@@ -144,7 +144,6 @@
          request.onload = function () {
             var response = request.response['events'];
             var numEvents = response.length;
-            // penultimate-event last-event
             for (var i = 0; i < numEvents; i++) {
                var event = response[i];
                var additionalClasses = "";
