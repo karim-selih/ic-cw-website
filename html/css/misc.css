@@ -56,3 +56,28 @@ main {
    flex-wrap: wrap;
    align-items: stretch
 }
+
+@media only screen and (min-width: 900px) {
+   .event-photos {
+      height: 30vw;
+      max-height: 30vw;
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   .event-photos {
+      max-height: 36vh;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .event-photos {
+      max-height: 30vh;
+   }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+   .event-photos {
+      max-height: 40vw;
+   }
+}
