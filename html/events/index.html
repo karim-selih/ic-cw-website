@@ -126,7 +126,6 @@
    <script src="../js/init.js"></script>
    <script src='../js/fab.js'></script>
    <script src='../js/timer.js'></script>
-   <script src='../js/card-hover.js'></script>
    <!-- hoverable class produces a large shadow -->
    <script src='../js/main-page-tablet-optimisations.js'></script>
 
@@ -153,7 +152,7 @@
                   additionalClasses = "penultimate-event offset-l2"
                }
                var line = `<div class="col s12 l4 event ` + additionalClasses + `">
-                              <div class="card" onclick="location.href='` + event["location"] + `';">
+                              <div class="card hoverable" onclick="location.href='` + event["location"] + `';">
                                  <div class="card-image">
                                     <img src=".` + event["image"] + `" alt="` + event["name"] + `">
                                  </div>
