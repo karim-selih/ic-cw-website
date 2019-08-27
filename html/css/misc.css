@@ -7,12 +7,12 @@
 
 .email {
    color: #1e88e5;
-   transition: 200ms;
+   transition: 0.4s;
 }
 
 .email:hover {
    color: #f57c00;
-   transition: 200ms;
+   transition: 0.25s;
 }
 
 .social {
