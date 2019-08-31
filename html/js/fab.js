@@ -5,9 +5,9 @@ function isScrolledIntoView(el) {
    var elemBottom = rect.bottom;
 
    // Only completely visible elements return true:
-   var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+   // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
    // Partially visible elements return true:
-   // isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+   var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
    return isVisible;
 }
 
@@ -17,7 +17,7 @@ $("a[href='#top']").click(function () {
 });
 
 $(window).scroll(function () {
-   if (!isScrolledIntoView(document.getElementsByClassName('page-footer')[0]) && $(this).scrollTop() > 300) {
+   if (!isScrolledIntoView(document.getElementsByClassName('footer-copyright')[0]) && $(this).scrollTop() > 300) {
       $(".scroll-to-top").removeClass("scale-out");
    } else {
       $(".scroll-to-top").addClass("scale-out");
