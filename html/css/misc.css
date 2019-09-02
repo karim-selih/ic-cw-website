@@ -64,11 +64,16 @@ main {
    cursor:pointer;
 }
 
+.fixed-height-row,
 .event-container {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    align-items: stretch
+}
+
+.fixed-height-col {
+   display: flex;
 }
 
 @media only screen and (min-width: 900px) {
