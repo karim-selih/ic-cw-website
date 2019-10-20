@@ -35,7 +35,7 @@
 <body class="fade">
 
    <!-- Navbar -->
-   <header>
+   <header class="nav">
       <div class="navbar-fixed">
          <nav class="nav-wrapper blue darken-1">
             <div class="container">
@@ -132,6 +132,7 @@
    <script>
       $(document).ready(function () {
          $(".page-footer").load("../html-sections/footer.html");
+         $(".nav").load("../html-sections/generic-nav.html");
          $('.materialboxed').materialbox();
          $('.scrollspy').scrollSpy();
          $('.parallax').parallax();
