@@ -35,56 +35,7 @@
 <body class="fade">
 
    <!-- Navbar -->
-   <header>
-      <div class="navbar-fixed">
-         <nav class="nav-wrapper blue darken-1">
-            <div class="container">
-               <a class="brand-logo" href="../../">
-                  <img class="responsive-image" style="height: 50px; margin-top: 5px;" src="../../img/cw-logo.png"
-                     alt="Logo">
-               </a>
-
-               <a class="hide-on-med-and-down" style="padding-left: 70px;" id="timer"></a>
-               <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                  <i class="material-icons white-text">menu</i>
-               </a>
-               <ul class="right hide-on-med-and-down valign-wrapper">
-                  <li><a class="white-text" href="../../">Home</a></li>
-                  <li><a class="white-text" href="#about">About</a></li>
-                  <li><a class="white-text" href="../../events/">Events</a></li>
-                  <li><a class="white-text" href="../">Contact</a></li>
-                  <li><a href="https://www.facebook.com/ImperialCW/"
-                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
-                        <i class="fab fa-facebook"></i>
-                     </a></li>
-                  <li><a href="https://www.instagram.com/imperialcollegecw/"
-                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
-                        <i class="fab fa-instagram"></i>
-                     </a></li>
-                  <li><a href="https://twitter.com/impcw"
-                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
-                        <i class="fab fa-twitter"></i>
-                     </a></li>
-               </ul>
-
-
-            </div>
-         </nav>
-      </div>
-      <ul class="sidenav" id="mobile-menu">
-         <li><a class="sidenav-close" href="../../">Home</a></li>
-         <li><a class="sidenav-close" href="#about">About</a></li>
-         <li><a class="sidenav-close" href="../../events/">Events</a></li>
-         <li><a class="sidenav-close" href="../">Contact</a></li>
-         <li><a class="sidenav-close" href="https://www.facebook.com/ImperialCW/"><i
-                  class="black-text fab fa-facebook"></i></a>
-         </li>
-         <li><a class="sidenav-close" href="https://www.instagram.com/imperialcollegecw/"> <i
-                  class="black-text fab fa-instagram"></i></a></li>
-         <li><a class="sidenav-close" href="https://twitter.com/impcw"> <i class="black-text fab fa-twitter"></i></a>
-         </li>
-      </ul>
-   </header>
+   <header class="nav"></header>
 
    <main>
       <div class="container">
@@ -127,6 +78,7 @@
    <script>
       $(document).ready(function () {
          $(".page-footer").load("../../html-sections/footer.html");
+         $(".nav").load("../../html-sections/generic-nav.html");
       });
    </script>
 
