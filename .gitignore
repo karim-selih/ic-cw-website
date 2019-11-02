@@ -1,6 +1,7 @@
 # Ignore MacOS files
 .DS_Store
 
+.vscode
 # Ignore CSS, JS and Images stored in the templates folder
 /templates/css
 /templates/js
