@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Challenges | Imperial College London Charity Week</title>
+
+   <!-- Font awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+   <!-- CSS  -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+   <link href="../../css/misc.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+   <!-- Icon -->
+   <link rel="shortcut icon" href="../../img/cw-logo-orange.ico" type="image/x-icon" />
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145411724-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145411724-1');
+   </script>
+
+</head>
+
+<body class="fade">
+
+   <!-- Navbar -->
+   <header class="nav"></header>
+
+   <main>
+
+      <div class="container">
+         <h2 class="header left blue-text text-darken-1" style="margin-top: 50px; margin-bottom: 50px;">Challenges</h2>
+
+
+         <div class="carousel event-photos carousel-slider" style="object-fit: cover;" id="pictures">
+            <a class="carousel-item"><img src="../../img/challenges-1.jpg"></a>
+            <a class="carousel-item"><img src="../../img/challenges-2.jpg"></a>
+         </div>
+
+
+         <div class="row" style="margin-top: 30px; margin-bottom: 50px;">
+            <div class="col s12 l8" style="margin-bottom: 30px;">
+               <br>
+               <p>
+                  Charity Week returns annually for the same purpose, reminding us that by uniting, we change the world
+                  and make it better than before.
+                  But the question on everyone’s minds is, what do challenges have in store?
+                  Expect unique tests, to see if you’re the best, as well as fun galore.
+                  CW principles honoured we’ll come home having garnered, friends and memories, as well as money for our
+                  cause!
+               </p>
+            </div>
+            <br>
+            <div class="col s12 l4">
+               <div class="card">
+                  <div class="card-content">
+                     <span class="card-title">Get in touch</span>
+                     <h6>Daanyaal Khan</h6>
+                     <a class="email" href="mailto:dhk17@imperial.ac.uk?subject=CW Challenges">dhk17@imperial.ac.uk</a>
+                     <h6>Rehana Byrne</h6>
+                     <a class="email" href="mailto:reb4218@imperial.ac.uk?subject=CW Challenges">reb4218@imperial.ac.uk</a>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+
+      <!-- Scroll to top FAB -->
+      <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
+         <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
+            <i class="large material-icons">keyboard_arrow_up</i>
+         </a>
+      </div>
+   </main>
+
+
+   <!-- Footer -->
+   <footer class="page-footer grey darken-3"></footer>
+
+   <!--  Scripts -->
+
+   <!-- External scripts -->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="../../js/materialize.min.js"></script>
+
+   <!-- Common scripts used for websites functionality -->
+   <script src="../../js/init.js"></script>
+   <script src='../../js/fab.js'></script>
+   <script src='../../js/timer.js'></script>
+   <script src='../../js/fade.js'></script>
+
+
+   <!-- Loads footer and materialized functions -->
+   <script>
+      $(document).ready(function () {
+         $(".page-footer").load("../../html-sections/footer.html");
+         $(".nav").load("../../html-sections/generic-nav.html");
+         $('.carousel').carousel();
+         $('.carousel.carousel-slider').carousel({
+            fullWidth: true, indicators: true
+         });
+         // Makes the carousel change to the next image every 3 seconds
+         setInterval(function () {
+            $('.carousel').carousel('next');
+         }, 4500);
+      });
+   </script>
+</body>
+
+</html>
