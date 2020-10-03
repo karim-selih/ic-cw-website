@@ -7,7 +7,13 @@
          "short": "Whether you’re a Fresher or a Charity Week Veteran, Volunteer’s Meeting is your first stop to find out everything about the campaign and how you can get involved!"
       },
       {
-         "name": "Speaker Event",
+         "name": "Virtual Auction Dinner",
+         "location": "./dinner/",
+         "image": "./img/dinner-3-low.jpeg",
+         "short": "From chicken wings to cakes to smoothies - all available in one place, CW Stalls! Come along, experience this wonderful mix of food and have a chat and learn what CW is all about!"
+      },
+      {
+         "name": "Speakers",
          "location": "./speaker-event/",
          "image": "./img/speaker-1-low.jpg",
          "short": "An evening full of eye-opening talks detailing some of the many disasters scattered across our world and what we can do to help. You do not want to miss this!"
@@ -16,19 +22,20 @@
          "name": "Collects",
          "location": "./collects/",
          "image": "./img/collects-low.jpeg",
-         "short": "Collects is the heart of Charity Week! Put on your CW t-shirt, grab a bucket and raise as much money as possible at street collects, tube collects and brand new this year: mosque collects!"
+         "short": "Collects is the heart of Charity Week! Put on your CW t-shirt, grab a bucket and raise as much money as possible at street collects, tube collects and mosque collects!"
       },
       {
-         "name": "Challenges",
+         "name": "Education and Outreach",
+         "location": "./outreach/",
+         "image": "./img/food-fest-1-low.jpeg",
+         "short": "Food Festival is where you can find a range of mouth-watering cuisines, fun activities and buzzing vibes, all located in the heart of London!"
+      },
+      {
+         "name": "Championships",
          "location": "./challenges/",
          "image": "./img/challenges-1-low.jpeg",
          "short": "Challenges is about pushing yourself out of your comfort zone, to not only raise money but develop yourself as an individual and unite as a community."
-      },
-      {
-      "name": "Annual Dinner and Auction",
-         "location": "./dinner/",
-         "image": "./img/dinner-3-low.jpeg",
-         "short": "Imperial College Charity Week invites you to our renowned flagship event - the Annual Charity Week Dinner! This is a must attend event for everyone!"
       }
+      
    ]
 }
