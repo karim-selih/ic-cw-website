@@ -32,7 +32,7 @@
       },
       {
          "name": "Championships",
-         "location": "./challenges/",
+         "location": "./championships/",
          "image": "./img/challenges-1-low.jpeg",
          "short": "Challenges is about pushing yourself out of your comfort zone, to not only raise money but develop yourself as an individual and unite as a community."
       }
