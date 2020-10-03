@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Challenges | Imperial College London Charity Week</title>
+
+   <!-- Font awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+   <!-- CSS  -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+   <link href="../../css/misc.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+   <!-- Icon -->
+   <link rel="shortcut icon" href="../../img/cw-logo-orange.ico" type="image/x-icon" />
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145411724-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145411724-1');
+   </script>
+
+</head>
+
+<body class="fade">
+
+   <!-- Navbar -->
+   <header class="nav"></header>
+
+   <main>
+
+      <div class="container">
+         <h2 class="header left blue-text text-darken-1" style="margin-top: 50px; margin-bottom: 50px;">2016</h2>
+
+
+      <!-- Scroll to top FAB -->
+      <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
+         <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
+            <i class="large material-icons">keyboard_arrow_up</i>
+         </a>
+      </div>
+   </main>
+
+
+   <!-- Footer -->
+   <footer class="page-footer grey darken-3"></footer>
+
+   <!--  Scripts -->
+
+   <!-- External scripts -->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="../../js/materialize.min.js"></script>
+
+   <!-- Common scripts used for websites functionality -->
+   <script src="../../js/init.js"></script>
+   <script src='../../js/fab.js'></script>
+   <script src='../../js/timer.js'></script>
+   <script src='../../js/fade.js'></script>
+
+
+   <!-- Loads footer and materialized functions -->
+   <script>
+      $(document).ready(function () {
+         $(".page-footer").load("../../html-sections/footer.html");
+         $(".nav").load("../../html-sections/generic-nav.html");
+         $('.carousel').carousel();
+         $('.carousel.carousel-slider').carousel({
+            fullWidth: true, indicators: true
+         });
+         // Makes the carousel change to the next image every 3 seconds
+         setInterval(function () {
+            $('.carousel').carousel('next');
+         }, 4500);
+      });
+   </script>
+</body>
+
+</html>
