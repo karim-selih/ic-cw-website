@@ -1,0 +1,54 @@
+{
+   "events": [
+      {
+         "name": "Volunteers",
+         "image": "./img/volunteers-poster.png"
+      },
+      {
+         "name": "Street Collects",
+         "image": "./img/streets-poster.png"
+      },
+      {
+         "name": "Fifa",
+         "image": "./img/fifa-poster.png"
+      },
+      {
+         "name": "Sports Day",
+         "image": "./img/sports-poster.png"
+      },
+      {
+         "name": "Food Fest",
+         "image": "./img/food-fest-poster.png"
+      },
+      {
+         "name": "Stalls",
+         "image": "./img/stalls-poster.png"
+      },
+      {
+         "name": "Tube Collects",
+         "image": "./img/tube-poster.png"
+      },
+      {
+         "name": "Snowdon",
+         "image": "./img/snowdon-poster.png"
+      },
+      {
+         "name": "Hype Night",
+         "image": "./img/hype-poster.png"
+      },
+      {
+         "name": "Big Brunch",
+         "image": "./img/brunch-poster.png"
+      },
+      {
+         "name": "Daring Dodgeball",
+         "image": "./img/dodgeball-poster.png"
+      },
+      {
+         "name": "Dinner",
+         "image": "./img/dinner-poster.png"
+      }
+     
+      
+   ]
+}
