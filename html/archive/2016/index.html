@@ -5,7 +5,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Challenges | Imperial College London Charity Week</title>
+   <title>2016 | Imperial College London Charity Week</title>
+
+   <meta name="description" content="Website for the Imperial College Charity Week Campaign">
+   <meta name="keywords"
+      content="Imperial College London, Imperial, London, Charity, Charity Week, Islamic Relief, Donation, Imperial College, ISoc, Islamic Society, Imperial ISoc, Imperial College ISoc">
 
    <!-- Font awesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -14,6 +18,7 @@
    <!-- CSS  -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+   <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
    <link href="../../css/misc.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
    <!-- Icon -->
@@ -29,17 +34,202 @@
       gtag('config', 'UA-145411724-1');
    </script>
 
+   <style>
+      .image-text {
+         text-shadow: 1px 2px 8px #000;
+      }
+
+      .material-icons.active {
+         color: #1e88e5 !important;
+      }
+
+      /* label focus color */
+      .input-field input[type=text]:focus+label,
+      .input-field input[type=email]:focus+label,
+      .materialize-textarea:focus:not([readonly])+label {
+         color: #1e88e5 !important;
+      }
+
+      /* label underline focus color */
+      .input-field input[type=text]:focus,
+      .input-field input[type=email]:focus,
+      .materialize-textarea:focus:not([readonly]) {
+         border-bottom: 1px solid #1e88e5 !important;
+         box-shadow: 0 1px 0 0 #1e88e5 !important;
+      }
+   </style>
+
 </head>
 
 <body class="fade">
 
    <!-- Navbar -->
-   <header class="nav"></header>
+   <header class="nav">
+      <div class="navbar-fixed">
+         <nav class="nav-wrapper blue darken-1">
+            <div class="container">
+               <a class="brand-logo" href="./">
+                  <img class="responsive-image" style="height: 50px; margin-top: 5px;" src="../../img/cw-logo.png" alt="Logo">
+               </a>
+               <div>
+               <a class="left hide-on-med-and-down" style="padding-left: 50px;"><b>2016</b></a>
+            </div>
+               <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons white-text">menu</i>
+               </a>
+               <ul class="right hide-on-med-and-down valign-wrapper">
+                  <li><a class="white-text" href="#home">Home</a></li>
+                  <li><a class="white-text" href="#about">About</a></li>
+                  <li><a class="white-text" href="#events">Events</a></li>
+                  <li><a class="white-text" href="#contact">Contact</a></li>
+                  <li><a class="white-text" href="../index.html">Archive</a></li>
+
+                  <li><a href="https://www.facebook.com/ImperialCW/"
+                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
+                        <i class="fab fa-facebook"></i>
+                     </a></li>
+                  <li><a href="https://www.instagram.com/imperialcollegecw/"
+                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
+                        <i class="fab fa-instagram"></i>
+                     </a></li>
+                  <li><a href="https://twitter.com/impcw"
+                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
+                        <i class="fab fa-twitter"></i>
+                     </a></li>
+                  <li><a class="white-text btn orange darken-2 waves-effect waves-light"
+                        href="https://cw2019.everydayhero.com/uk/imperial-college-charity-week">Donate</a></li>
+               </ul>
+
+
+            </div>
+         </nav>
+      </div>
+      <ul class="sidenav" id="mobile-menu">
+         <li><a class="sidenav-close" href="#mobile-home">Home</a></li>
+         <li><a class="sidenav-close" href="#about">About</a></li>
+         <li><a class="sidenav-close" href="#events">Events</a></li>
+         <li><a class="sidenav-close" href="#contact">Contact</a></li>
+         <li><a class="sidenav-close" href="../index.html">Archive</a></li>
+
+         <li><a class="sidenav-close" href="https://www.facebook.com/ImperialCW/"><i
+                  class="black-text fab fa-facebook"></i></a>
+         </li>
+         <li><a class="sidenav-close" href="https://www.instagram.com/imperialcollegecw/"> <i
+                  class="black-text fab fa-instagram"></i></a></li>
+         <li><a class="sidenav-close" href="https://twitter.com/impcw"> <i class="black-text fab fa-twitter"></i></a>
+         </li>
+         <li><a class="sidenav-close" href="https://cw2019.everydayhero.com/uk/imperial-college-charity-week">Donate</a>
+         </li>
+      </ul>
+   </header>
 
    <main>
+      <!-- First image -->
+      <!-- For large screens -->
+      <div id="home" class="slider valign-wrapper hide-on-med-and-down scrollspy">
+         <ul class="slides">
+            <li>
+               <img src="./img/hype-8-2.jpg" alt="Tube Collects">
+               <div class="caption" style="margin-top: +55px;">
+                  <h1 class="header center white-text image-text">Charity Week 2016</h1>
+                  <h3 class="header center white-text col s12 image-text">Going Further Together</h3>
+               </div>
+            </li>
+         </ul>
+      </div>
 
-      <div class="container">
-         <h2 class="header left blue-text text-darken-1" style="margin-top: 50px; margin-bottom: 50px;">2016</h2>
+      <!-- For smaller screens -->
+      <div id="mobile-home" class="container scrollspy show-on-med-and-down hide-on-large-only">
+         <div class="section no-pad-bot">
+            <div class="container">
+               <h1 class="header center blue-text text-darken-1">Charity Week 2016</h1>
+               <h2 class="header center black-text col s12" style="margin-top: -10px;">Going Further Together</h2>
+            </div>
+         </div>
+      </div>
+
+
+         <!-- About -->
+      <div class="container scrollspy" id="about" style="margin-top: 80px; margin-bottom: 100px;">
+
+         <div class="video-container hide-on-large-only" style="margin-top: 60px;">
+            <iframe class="lazyload" width="100%" height="100%"
+               src="https://www.youtube.com/embed/tRIo_Hd45q8"
+               frameborder="0" allowfullscreen></iframe>
+
+         </div>
+
+        
+         <!-- CW trailer -->
+         <div class="video-container hide-on-med-and-down" style="margin-top: 60px;">
+            <iframe class="lazyload" width="100%" height="100%"
+               data-src="https://www.youtube.com/embed/tRIo_Hd45q8"
+               frameborder="0" allowfullscreen></iframe>
+
+         </div>
+
+      </div>
+  
+
+      <!-- Second image -->
+      <div class="slider valign-wrapper">
+         <ul class="slides">
+            <li>
+               <img src="./img/collects.jpg" alt="Street Collects">
+               <div class="caption center-align image-text">
+                  <h2>We raised £47,842.39 in 2016!</h2>
+               </div>
+            </li>
+         </ul>
+      </div>
+
+     <!-- Events -->
+
+     <h3 class="header center blue-text text-darken-1" style="margin-top: 60px; margin-bottom: 30px;">Past Events</h3>
+     <h5 class="header center blue-text text-darken-1" style="margin-top: 30px; margin-bottom: 50px;">Check out some of our incredible posters!</h5>
+     <div class="container scrollspy" id="events" style="margin-bottom: 80px;">
+        <!-- Event cards -->
+        <div class="row event-container" id="event-cards"></div>
+
+        
+     </div>
+
+
+      <!-- Third image -->
+      <div class="slider valign-wrapper">
+         <ul class="slides">
+            <li>
+               <img src="./img/snowdon.jpg" alt="Snowdon event">
+               <div class="caption center-align image-text">
+            
+               </div>
+            </li>
+         </ul>
+      </div>
+
+
+      <!-- Highlights -->
+      <div class="container scrollspy" id="contact" style="margin-bottom: 50px;">
+         <h3 class="header center blue-text text-darken-1" style="margin-top: 60px; margin-bottom: 30px;">Highlights
+         </h3> 
+        
+         <div class="carousel event-photos carousel-slider" style="object-fit: cover;" id="pictures">
+            
+            <a class="carousel-item"><img src="./img/stalls.jpg"></a>
+            <a class="carousel-item"><img src="./img/trophy.jpg"></a>
+            <a class="carousel-item"><img src="./img/collects-3.jpg"></a>
+            <a class="carousel-item"><img src="./img/hype-6.jpg"></a>
+            <a class="carousel-item"><img src="./img/hype-4.jpg"></a>
+            <a class="carousel-item"><img src="./img/collects-2.jpg"></a>
+            <a class="carousel-item"><img src="./img/hype-2.jpg"></a>
+            <a class="carousel-item"><img src="./img/hype.jpg"></a>
+            <a class="carousel-item"><img src="./img/collects-5.jpg"></a>
+            <a class="carousel-item"><img src="./img/hype-3.jpg"></a>
+
+       
+         </div>
+      </div>
+
 
 
       <!-- Scroll to top FAB -->
@@ -50,7 +240,6 @@
       </div>
    </main>
 
-
    <!-- Footer -->
    <footer class="page-footer grey darken-3"></footer>
 
@@ -59,19 +248,21 @@
    <!-- External scripts -->
    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script src="../../js/materialize.min.js"></script>
+   <script src="../../js/lazysizes.min.js" async=""></script>
 
    <!-- Common scripts used for websites functionality -->
    <script src="../../js/init.js"></script>
    <script src='../../js/fab.js'></script>
-   <script src='../../js/timer.js'></script>
-   <script src='../../js/fade.js'></script>
-
+   <!-- <script src='js/timer.js'></script> -->
+   <script src="../../js/main-page-tablet-optimisations.js"></script>
 
    <!-- Loads footer and materialized functions -->
    <script>
       $(document).ready(function () {
          $(".page-footer").load("../../html-sections/footer.html");
-         $(".nav").load("../../html-sections/generic-nav.html");
+         $('.scrollspy').scrollSpy();
+         $('.parallax').parallax();
+         $('.slider').slider({ indicators: false, height: 550 });
          $('.carousel').carousel();
          $('.carousel.carousel-slider').carousel({
             fullWidth: true, indicators: true
@@ -80,8 +271,34 @@
          setInterval(function () {
             $('.carousel').carousel('next');
          }, 4500);
+
+         var requestURL = './events.json';
+         var request = new XMLHttpRequest();
+         request.open('GET', requestURL);
+         request.responseType = 'json';
+         request.send();
+
+         request.onload = function () {
+            var response = request.response['events'];
+            var numEvents = response.length;
+            for (var i = 0; i < numEvents; i++) {
+               var event = response[i];
+               var additionalClasses = "";
+               var line = `<div class="col s12 m6 l4 event ` + additionalClasses + `">
+                              <div class="card hoverable" ';">
+                                 <div class="card-image">
+                                    <img src="` + event["image"] + `" alt="` + event["name"] + `">
+                                 </div>
+                              </div>
+                           </div>`;
+
+               $("#event-cards").append(line);
+            }
+         }
+         setTimeout(function () { document.body.className = ''; }, 300);
       });
    </script>
+
 </body>
 
 </html>

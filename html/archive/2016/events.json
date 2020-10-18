@@ -1,0 +1,43 @@
+{
+   "events": [
+      {
+         "name": "Dinner",
+         "image": "./img/dinner-poster.jpg"
+      },
+      {
+         "name": "Smokey Not Smudgey",
+         "image": "./img/sns-poster.jpg"
+      },
+      {
+         "name": "Street Collects",
+         "image": "./img/street-poster.jpg" 
+      },
+      {
+         "name": "Snowdon",
+         "image": "./img/snowdon-poster.jpg"
+      },
+      {
+         "name": "Fun Run",
+         "image": "./img/run-poster.jpg"
+      },
+      {
+         "name": "Bake",
+         "image": "./img/bake-poster-min.jpg" 
+      },
+      {
+         "name": "Hype Night",
+         "image": "./img/hype-poster.jpg"
+      },
+      {
+         "name": "Sisters Hype Night",
+         "image": "./img/hype-night-poster.jpg"
+      },
+      {
+         "name": "Battle",
+         "image": "./img/battle-poster.jpg" 
+      }
+      
+      
+      
+   ]
+}
