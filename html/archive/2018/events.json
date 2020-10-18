@@ -1,0 +1,44 @@
+{
+   "events": [
+      {
+         "name": "Volunteers",
+         "image": "./img/volunteers-poster.png"
+      },
+      {
+         "name": "Tube Collects",
+         "image": "./img/tube-poster.png"
+      },
+      {
+         "name": "Sisters' Dodgeball",
+         "image": "./img/sisters-dodgeball-poster.png" 
+      },
+      {
+         "name": "Brothers' Football",
+         "image": "./img/brothers-football-poster.png"
+      },
+      {
+         "name": "Jungle",
+         "image": "./img/jungle-run-poster.png"
+      },
+      {
+         "name": "Stalls",
+         "image": "./img/cw-stalls-poster.png"
+      },
+     
+      {
+         "name": "Street Collects",
+         "image": "./img/street-collects-poster.png"
+      },
+      {
+         "name": "Food Festival",
+         "image": "./img/food-festival-poster.png"
+      },
+      {
+         "name": "Mountain Climb",
+         "image": "./img/mountain-climb-poster.png"
+      }
+  
+     
+      
+   ]
+}
