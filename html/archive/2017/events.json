@@ -1,0 +1,16 @@
+{
+   "events": [
+      {
+         "name": "Dinner",
+         "image": "./img/dinner-poster-min.png"
+      },
+      {
+         "name": "Smokey Not Smudgey",
+         "image": "./img/sns-poster-min.png"
+      },
+      {
+         "name": "Volunteers",
+         "image": "./img/volunteer-poster-min.png" 
+      }    
+   ]
+}
