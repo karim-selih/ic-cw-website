@@ -3,38 +3,38 @@
       {
          "name": "Volunteers' meeting",
          "location": "./volunteers-meeting/",
-         "image": "./img/meeting-low.jpg",
+         "image": "./img/Current/volunteers-low.jpg",
          "short": "Whether you’re a Fresher or a Charity Week Veteran, Volunteer’s Meeting is your first stop to find out everything about the campaign and how you can get involved!"
       },
       {
          "name": "Virtual Auction Dinner",
          "location": "./dinner/",
-         "image": "./img/dinner-3-low.jpeg",
-         "short": "From chicken wings to cakes to smoothies - all available in one place, CW Stalls! Come along, experience this wonderful mix of food and have a chat and learn what CW is all about!"
+         "image": "./img/Current/dinner-low.jpg",
+         "short": "The Auction Dinner perfectly captures the essence of CW! CW2020 may be unlike any dinner we’ve ever had before but you can still expect to enjoy all the much loved exciting auction bidding battles, competitions, prizes, speeches and CW farewells!"
       },
       {
          "name": "Speakers",
          "location": "./speaker-event/",
          "image": "./img/speaker-1-low.jpg",
-         "short": "An evening full of eye-opening talks detailing some of the many disasters scattered across our world and what we can do to help. You do not want to miss this!"
+         "short": "From inspiring talks to engaging quizzes, the opportunities to educate and inform students across campus of CW, the History of Islam theme and other important topics are endless. We will be hosting multiple speaker events on important and interesting topics that will stay with you long after you have attended."
       },
       {
          "name": "Collects",
          "location": "./collects/",
-         "image": "./img/collects-low.jpeg",
-         "short": "Collects is the heart of Charity Week! Put on your CW t-shirt, grab a bucket and raise as much money as possible at street collects, tube collects and mosque collects!"
+         "image": "./img/Current/streets.jpeg",
+         "short": "We think of Collects as the true spirit of Charity Week. From chanting the CW vision to rallying the spirits of volunteer collectors, we are planning to retain this much loved event by adding a virtual element"
       },
       {
          "name": "Education and Outreach",
          "location": "./outreach/",
-         "image": "./img/food-fest-1-low.jpeg",
-         "short": "Food Festival is where you can find a range of mouth-watering cuisines, fun activities and buzzing vibes, all located in the heart of London!"
+         "image": "./img/Current/med_event-low.jpg",
+         "short": "CW is the perfect opportunity to help those in need, but we also want to provide disadvantaged A-level students across London and the UK a chance to get some guidance and support with their university applications. "
       },
       {
          "name": "Championships",
          "location": "./championships/",
-         "image": "./img/challenges-1-low.jpeg",
-         "short": "Challenges is about pushing yourself out of your comfort zone, to not only raise money but develop yourself as an individual and unite as a community."
+         "image": "./img/Current/hype_night-low.jpg",
+         "short": "At the heart of every mighty campaign is a challenge - one that tests its volunteers and helps forge unbreakable bonds of friendship. Check out the challenges we will try to conquer!"
       }
       
    ]
