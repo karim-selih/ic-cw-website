@@ -34,64 +34,119 @@
 
 <body class="fade">
 
-   <!-- Navbar -->
-   <header class="nav"></header>
+    <!-- Navbar -->
+    <header class="nav">
+      <div class="navbar-fixed">
+         <nav class="nav-wrapper blue darken-1">
+            <div class="container">
+               <a class="brand-logo" href="./">
+                  <img class="responsive-image hide-on-med-and-down" style="height: 50px; margin-top: 5px;" src="../img/cw-logo.png" alt="Logo">
+               </a>
+
+               <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons white-text">menu</i>
+               </a>
+               <ul class="right hide-on-med-and-down valign-wrapper">
+                  <li><a class="white-text" href="https://imperialcharityweek.co.uk/">Home</a></li>
+                  <li><a class="white-text" href="https://imperialcharityweek.co.uk/">About</a></li>
+                  <li><a class="white-text" href="https://imperialcharityweek.co.uk/events">Events</a></li>
+                  <li><a class="white-text" href="https://imperialcharityweek.co.uk/contact">Contact</a></li>
+                  <li><a class="white-text" href="https://imperialcharityweek.co.uk/archive">Archive</a></li>
+
+                  <li><a href="https://www.facebook.com/ImperialCW/"
+                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
+                        <i class="fab fa-facebook"></i>
+                     </a></li>
+                  <li><a href="https://www.instagram.com/imperialcollegecw/"
+                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
+                        <i class="fab fa-instagram"></i>
+                     </a></li>
+                  <li><a href="https://twitter.com/impcw"
+                        class="btn-floating transparent z-depth-0 waves-effect waves-light">
+                        <i class="fab fa-twitter"></i>
+                     </a></li>
+                  <li><a class="white-text btn orange darken-2 waves-effect waves-light"
+                        href="https://charity-week-2020.everydayhero.com/uk/imperial-college-charity-week-2020">Donate</a></li>
+               </ul>
+
+
+            </div>
+         </nav>
+      </div>
+      <ul class="sidenav" id="mobile-menu">
+         <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/">Home</a></li>
+         <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/">About</a></li>
+         <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/events">Events</a></li>
+         <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/contact">Contact</a></li>
+         <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/archive">Archive</a></li>
+
+         <li><a class="sidenav-close" href="https://www.facebook.com/ImperialCW/"><i
+                  class="black-text fab fa-facebook"></i></a>
+         </li>
+         <li><a class="sidenav-close" href="https://www.instagram.com/imperialcollegecw/"> <i
+                  class="black-text fab fa-instagram"></i></a></li>
+         <li><a class="sidenav-close" href="https://twitter.com/impcw"> <i class="black-text fab fa-twitter"></i></a>
+         </li>
+         <li><a class="sidenav-close" href="https://charity-week-2020.everydayhero.com/uk/imperial-college-charity-week-2020">Donate</a>
+         </li>
+      </ul>
+   </header>
 
    <main>
-      <div class="container scrollspy" id="contact">
-         <h3 class="header center blue-text text-darken-1">Contact</h3>
-         <h6 class="center-align">To get in touch, send an email to <a class="email" id="head-email"
-               href="mailto:dinner@imperialcharityweek.co.uk?subject=Contact">head@imperialcharityweek.co.uk</a>
-            or use the contact form below</h6>
-         <div class="row">
-            <div class="col s12 l8 push-l2">
-               <script type="text/javascript">var submitted = false;</script>
-               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                  onload="if(submitted) {window.location='./submitted/';}"></iframe>
-               <form
-                  action="https://docs.google.com/forms/d/e/1FAIpQLSfepJ4uAgior93MPNr8anSgtOW6fDfio3CNGHLa3gFFFha-gA/formResponse"
-                  method="post" target="hidden_iframe" onsubmit="submitted=true;">
-
-                  <div class="input-field">
-                     <i class="material-icons prefix">person</i>
-                     <input id="name" type="text" name="entry.2005620554" required>
-                     <label for="name">Name*</label>
-                  </div>
-
-                  <div class="input-field">
-                     <i class="material-icons prefix">email</i>
-                     <input id="email" type="email" name="entry.1045781291" required>
-                     <label for="email">Email Address*</label>
-                  </div>
-
-                  <div class="input-field">
-                     <i class="material-icons prefix">phone</i>
-                     <input id="phone" type="text" name="entry.1166974658">
-                     <label for="phone">Phone Number</label>
-                  </div>
-
-                  <div class="input-field">
-                     <i class="material-icons prefix">message</i>
-                     <textarea id="message" class="materialize-textarea" rows="20" name="entry.839337160"
-                        required></textarea>
-                     <label for="message">Message*</label>
-                  </div>
-
-                  <div class="input-field center" style="margin-top: 40px;">
-                     <button class="btn orange darken-2 waves-effect waves-light" type="submit">Send</button>
-                  </div>
-               </form>
+      <div class="container row center">
+         <div class="section no-pad-bot">
+            <div class="container row center">
+               <h2 class="header center blue-text text-darken-1">Contact Us</h2>
+               <h5 class="header center black-text text-darken-1">We aim to reply within two days!</h2>
+               <div class="row center" style="margin-top: 40px; position: relative; left:70px">
+                  <table class='striped highlight'>
+                     <thead>
+                       <tr>
+                           <th>Purpose</th>
+                           <th>Heads</th>
+                           <th>Email</th>
+                       </tr>
+                     </thead>
+             
+                     <tbody>
+                       <tr>
+                         <td>General</td>
+                         <td>Rehana Byrne <br> Yasin Uddin</td>
+                         <td><a class="email"
+                           href="mailto:contact@imperialcharityweek.co.uk?subject=Charity Week">contact@imperialcharityweek.co.uk</a></td>
+                       </tr>
+                       <tr>
+                         <td>Auction Dinner</td>
+                         <td>Sammy Arab <br> Suraya Gafore</td>
+                         <td><a class="email"
+                           href="mailto:dinner@imperialcharityweek.co.uk?subject=Dinner">dinner@imperialcharityweek.co.uk</a></td>
+                       </tr>
+                       <tr>
+                         <td>Education & Outreach</td>
+                         <td>Rafey Asif <br> Afaaf Azreen <br> Sabi Zia</td>
+                         <td><a class="email" 
+                           href="mailto:education@imperialcharityweek.co.uk?subject=Education and Outreach">education@imperialcharityweek.co.uk</a></td>
+                       </tr>
+                       <tr>
+                        <td>Sponsorship</td>
+                        <td>Imdad Kadir</td>
+                        <td><a class="email" href="mailto:sponsorship@imperialcharityweek.co.uk?subject=Sponsorship">sponsorship@imperialcharityweek.co.uk</a></td>
+                      </tr>
+                     </tbody>
+                   </table>
+               </div>
             </div>
          </div>
       </div>
-
-      <!-- Scroll to top FAB -->
-      <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
-         <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
-            <i class="large material-icons">keyboard_arrow_up</i>
-         </a>
-      </div>
    </main>
+
+
+   <!-- Scroll to top FAB -->
+   <div class="fixed-action-btn scale-transition scale-out scroll-to-top">
+      <a href="#top" class="btn-floating btn-large orange darken-2 waves-effect waves-light">
+         <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+   </div>
 
    <!-- Footer -->
    <footer class="page-footer grey darken-3"></footer>
@@ -105,17 +160,14 @@
    <!-- Common scripts used for websites functionality -->
    <script src="../js/init.js"></script>
    <script src='../js/fab.js'></script>
-   <script src='../js/timer.js'></script>
    <script src='../js/fade.js'></script>
 
    <!-- Loads footer -->
    <script>
       $(document).ready(function () {
          $(".page-footer").load("../html-sections/footer.html");
-         $(".nav").load("../html-sections/generic-nav.html");
       });
    </script>
-
 
 </body>
 
