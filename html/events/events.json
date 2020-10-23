@@ -1,10 +1,10 @@
 {
    "events": [
       {
-         "name": "Volunteers' meeting",
+         "name": "Volunteers' Summit",
          "location": "./volunteers-meeting/",
          "image": "./img/Current/volunteers-low.jpg",
-         "short": "Whether you’re a Fresher or a Charity Week Veteran, Volunteer’s Meeting is your first stop to find out everything about the campaign and how you can get involved!"
+         "short": "Whether you’re a Fresher or a Charity Week Veteran, Volunteers' Summit is your first stop to find out everything about the campaign and how you can get involved!"
       },
       {
          "name": "Virtual Auction Dinner",
