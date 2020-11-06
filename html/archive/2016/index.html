@@ -63,13 +63,14 @@
 
 <body class="fade">
 
-    <!-- Navbar -->
-    <header class="nav">
+   <!-- Navbar -->
+   <header class="nav">
       <div class="navbar-fixed">
          <nav class="nav-wrapper blue darken-1">
             <div class="container">
                <a class="brand-logo" href="./">
-                  <img class="responsive-image" style="height: 50px; margin-top: 5px;" src="../../img/cw-logo.png" alt="Logo">
+                  <img class="responsive-image hide-on-med-and-down" style="height: 50px; margin-top: 5px;"
+                     src="../img/cw-logo.png" alt="Logo">
                </a>
 
                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
@@ -80,6 +81,7 @@
                   <li><a class="white-text" href="https://imperialcharityweek.co.uk/">About</a></li>
                   <li><a class="white-text" href="https://imperialcharityweek.co.uk/events">Events</a></li>
                   <li><a class="white-text" href="https://imperialcharityweek.co.uk/contact">Contact</a></li>
+                  <li><a class="white-text" href="https://imperialcharityweek.co.uk/sponsors">Sponsors</a></li>
                   <li><a class="white-text" href="https://imperialcharityweek.co.uk/archive">Archive</a></li>
 
                   <li><a href="https://www.facebook.com/ImperialCW/"
@@ -95,7 +97,8 @@
                         <i class="fab fa-twitter"></i>
                      </a></li>
                   <li><a class="white-text btn orange darken-2 waves-effect waves-light"
-                        href="https://charity-week-2020.everydayhero.com/uk/imperial-college-charity-week-2020">Donate</a></li>
+                        href="https://charity-week-2020.everydayhero.com/uk/imperial-college-charity-week-2020">Donate</a>
+                  </li>
                </ul>
 
 
@@ -107,6 +110,7 @@
          <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/">About</a></li>
          <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/events">Events</a></li>
          <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/contact">Contact</a></li>
+         <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/sponsors">Sponsors</a></li>
          <li><a class="sidenav-close" href="https://imperialcharityweek.co.uk/archive">Archive</a></li>
 
          <li><a class="sidenav-close" href="https://www.facebook.com/ImperialCW/"><i
@@ -116,7 +120,8 @@
                   class="black-text fab fa-instagram"></i></a></li>
          <li><a class="sidenav-close" href="https://twitter.com/impcw"> <i class="black-text fab fa-twitter"></i></a>
          </li>
-         <li><a class="sidenav-close" href="https://charity-week-2020.everydayhero.com/uk/imperial-college-charity-week-2020">Donate</a>
+         <li><a class="sidenav-close"
+               href="https://charity-week-2020.everydayhero.com/uk/imperial-college-charity-week-2020">Donate</a>
          </li>
       </ul>
    </header>
@@ -147,27 +152,25 @@
       </div>
 
 
-         <!-- About -->
+      <!-- About -->
       <div class="container scrollspy" id="about" style="margin-top: 80px; margin-bottom: 100px;">
 
          <div class="video-container hide-on-large-only" style="margin-top: 60px;">
-            <iframe class="lazyload" width="100%" height="100%"
-               src="https://www.youtube.com/embed/tRIo_Hd45q8"
+            <iframe class="lazyload" width="100%" height="100%" src="https://www.youtube.com/embed/tRIo_Hd45q8"
                frameborder="0" allowfullscreen></iframe>
 
          </div>
 
-        
+
          <!-- CW trailer -->
          <div class="video-container hide-on-med-and-down" style="margin-top: 60px;">
-            <iframe class="lazyload" width="100%" height="100%"
-               data-src="https://www.youtube.com/embed/tRIo_Hd45q8"
+            <iframe class="lazyload" width="100%" height="100%" data-src="https://www.youtube.com/embed/tRIo_Hd45q8"
                frameborder="0" allowfullscreen></iframe>
 
          </div>
 
       </div>
-  
+
 
       <!-- Second image -->
       <div class="slider valign-wrapper">
@@ -181,16 +184,17 @@
          </ul>
       </div>
 
-     <!-- Events -->
+      <!-- Events -->
 
-     <h3 class="header center blue-text text-darken-1" style="margin-top: 60px; margin-bottom: 30px;">Past Events</h3>
-     <h5 class="header center blue-text text-darken-1" style="margin-top: 30px; margin-bottom: 50px;">Check out some of our incredible posters!</h5>
-     <div class="container scrollspy" id="events" style="margin-bottom: 80px;">
-        <!-- Event cards -->
-        <div class="row event-container" id="event-cards"></div>
+      <h3 class="header center blue-text text-darken-1" style="margin-top: 60px; margin-bottom: 30px;">Past Events</h3>
+      <h5 class="header center blue-text text-darken-1" style="margin-top: 30px; margin-bottom: 50px;">Check out some of
+         our incredible posters!</h5>
+      <div class="container scrollspy" id="events" style="margin-bottom: 80px;">
+         <!-- Event cards -->
+         <div class="row event-container" id="event-cards"></div>
 
-        
-     </div>
+
+      </div>
 
 
       <!-- Third image -->
@@ -199,7 +203,7 @@
             <li>
                <img src="./img/snowdon.jpg" alt="Snowdon event">
                <div class="caption center-align image-text">
-            
+
                </div>
             </li>
          </ul>
@@ -209,10 +213,10 @@
       <!-- Highlights -->
       <div class="container scrollspy" id="contact" style="margin-bottom: 50px;">
          <h3 class="header center blue-text text-darken-1" style="margin-top: 60px; margin-bottom: 30px;">Highlights
-         </h3> 
-        
+         </h3>
+
          <div class="carousel event-photos carousel-slider" style="object-fit: cover;" id="pictures">
-            
+
             <a class="carousel-item"><img src="./img/stalls.jpg"></a>
             <a class="carousel-item"><img src="./img/trophy.jpg"></a>
             <a class="carousel-item"><img src="./img/collects-3.jpg"></a>
@@ -224,7 +228,7 @@
             <a class="carousel-item"><img src="./img/collects-5.jpg"></a>
             <a class="carousel-item"><img src="./img/hype-3.jpg"></a>
 
-       
+
          </div>
       </div>
 
