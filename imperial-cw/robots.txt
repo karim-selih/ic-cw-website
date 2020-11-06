@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /events/template
+Disallow: /templates
+Disallow: README.md
