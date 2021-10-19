@@ -25,8 +25,8 @@
          "short": "We think of Collects as the true spirit of Charity Week. From chanting the CW vision to rallying the spirits of volunteer collectors, this is an event you should definitely get involved with!"
       },
       {
-         "name": "Championships",
-         "location": "./championships/",
+         "name": "Challenges",
+         "location": "./challenges/",
          "image": "./img/challenges-2.jpg",
          "short": "At the heart of every mighty campaign is a challenge - one that tests its volunteers and helps forge unbreakable bonds of friendship. Check out the challenges we will try to conquer!"
       },
