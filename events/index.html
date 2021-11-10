@@ -163,7 +163,10 @@
                                  </div>
                               </div>
                            </div>`;
-
+               if (event["image"] == "") {
+                  line = `<div class="col s12 m6 l4">
+                           </div>`;
+               }
                $("#event-cards").append(line);
             }
          }
