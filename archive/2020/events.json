@@ -1,0 +1,54 @@
+{
+   "events": [
+      {
+         "name": "Bros' Football",
+         "image": "./img/bros-football.png"
+      },
+      {
+         "name": "Epic Stories Of Charity",
+         "image": "./img/epic-stories-of-charity.png"
+      },
+      {
+         "name": "Gateway To Med School",
+         "image": "./img/gateway-to-med-school.png"
+      },
+      {
+         "name": "Gateway To STEM",
+         "image": "./img/gateway-to-stem.png"
+      },
+      {
+         "name": "Legendary Muslim Women",
+         "image": "./img/legendary-muslim-women.png"
+      },
+      {
+         "name": "Mosque Collects",
+         "image": "./img/mosque-collects.png"
+      },
+      {
+         "name": "Sis' Sports Day",
+         "image": "./img/sis-sports-day.png"
+      },
+      {
+         "name": "Street Collects",
+         "image": "./img/street-collects.png"
+      },
+      {
+         "name": "Thames Bridges Trek",
+         "image": "./img/thames-bridges-trek.png"
+      },
+      {
+         "name": "The Great Auction",
+         "image": "./img/the-great-auction.png"
+      },
+      {
+         "name": "Volunteers Summit",
+         "image": "./img/volunteers-summit.png"
+      },
+      {
+         "name": "",
+         "image": ""
+      }
+     
+      
+   ]
+}
